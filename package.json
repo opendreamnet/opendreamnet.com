@@ -2,7 +2,7 @@
   "name": "@opendreamnet/www-opendreamnet",
   "displayName": "OpenDreamnet",
   "description": "We create decentralized applications to fight censorship and other projects.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "AGPL-3.0-or-later",
   "private": true,
   "scripts": {

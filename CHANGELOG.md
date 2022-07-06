@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/opendreamnet/opendreamnet/compare/v1.0.5...v1.0.6) (2022-07-06)
+
+
+### Bug Fixes
+
+* fixed major problems, added api connection to opencollective ([d011147](https://github.com/opendreamnet/opendreamnet/commit/d011147cc77c095a7336071ddf488b5719560349))
+
 ### [1.0.5](https://github.com/opendreamnet/opendreamnet/compare/v1.0.4...v1.0.5) (2021-09-10)
 
 
