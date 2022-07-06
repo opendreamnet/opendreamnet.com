@@ -61,8 +61,6 @@ export class API {
 
     this.org = data.account
 
-    console.log(this.org)
-
     return this.org
   }
 }

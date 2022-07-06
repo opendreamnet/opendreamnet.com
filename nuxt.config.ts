@@ -34,6 +34,7 @@ export default setNuxtConfig({
     '~/plugins/api.ts'
   ],
 
+  // https://github.com/nuxt-community/google-fonts-module
   googleFonts: {
     download: process.env.NODE_ENV === 'production',
     families: {
@@ -44,6 +45,13 @@ export default setNuxtConfig({
   //
   publicRuntimeConfig: {
     opencollective: 'opendreamnet'
+  },
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    workbox: {
+      enabled: false
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
