@@ -5,10 +5,12 @@ module.exports = {
     node: true
   },
   extends: [
-    '@dreamnet/eslint-config-dreamnet-nuxtjs',
-    'plugin:wdio/recommended'
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:nuxt/recommended'
   ],
   plugins: [
   ],
-  rules: {}
+  rules: {
+    'vue/multi-word-component-names': 0
+  }
 }

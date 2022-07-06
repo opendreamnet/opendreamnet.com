@@ -1,9 +1,6 @@
 <template>
-  <div class="contact">
-    <Box v-for="category of categories"
-         :key="category.slug"
-         :title="category.title"
-         :subtitle="category.description">
+  <div class="contact max-w-prose">
+    <Box>
       <div class="prose">
         <NuxtContent :document="category" />
       </div>
@@ -30,6 +27,7 @@ export default Vue.extend({
 
   methods: {
     async fetch() {
+      // @ts-ignore
       this.categories = await this.$content('contact').sortBy('order').fetch() as IContentDocument[]
     }
   }

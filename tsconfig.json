@@ -27,7 +27,10 @@
       "@nuxt/types",
       "@nuxt/content",
       "@types/node"
-    ]
+    ],
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "noImplicitAny": false
   },
   "exclude": [
     "node_modules",

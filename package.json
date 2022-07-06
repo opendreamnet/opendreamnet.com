@@ -1,7 +1,7 @@
 {
   "name": "@opendreamnet/www-opendreamnet",
-  "displayName": "OpenDreamNet",
-  "description": "We create decentralized applications to fight censorship.",
+  "displayName": "OpenDreamnet",
+  "description": "We create decentralized applications to fight censorship and other projects.",
   "version": "1.0.5",
   "license": "AGPL-3.0-or-later",
   "private": true,
@@ -12,7 +12,6 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext \".js,.vue\" .",
     "prepare": "husky install",
-    "deploy": "deploy dist -p pinata -d cloudflare -n www-opendreamnet",
     "release": "standard-version"
   },
   "lint-staged": {
@@ -20,7 +19,8 @@
   },
   "browserslist": {
     "production": [
-      ">0.5%",
+      "> 1%",
+      "last 2 versions",
       "not ie 11",
       "not op_mini all"
     ],
@@ -28,86 +28,60 @@
       "last 1 chrome version"
     ]
   },
+  "resolutions": {
+    "typescript": "4.7.4",
+    "vue": "2.6.14",
+    "vue-server-renderer": "2.6.14",
+    "vue-template-compiler": "2.6.14"
+  },
   "standard-version": {
     "path": ".",
     "tag-prefix": "v",
-    "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
-    "types": [
-      {
-        "type": "feat",
-        "section": "Features"
-      },
-      {
-        "type": "fix",
-        "section": "Bug Fixes"
-      },
-      {
-        "type": "improvement",
-        "section": "Improvements"
-      },
-      {
-        "type": "docs",
-        "section": "Others"
-      },
-      {
-        "type": "style",
-        "section": "Design"
-      },
-      {
-        "type": "refactor",
-        "section": "Others"
-      },
-      {
-        "type": "perf",
-        "section": "Improvements"
-      },
-      {
-        "type": "test",
-        "hidden": true
-      },
-      {
-        "type": "chore",
-        "section": "Others"
-      }
-    ]
+    "releaseCommitMessageFormat": "chore(release): {{currentTag}}"
   },
   "dependencies": {
-    "@nuxt/content": "^1.14.0",
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/gtm": "2.3.2",
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "axios": "^0.21.1",
-    "core-js": "^3.15.2",
+    "axios": "^0.27.2",
+    "core-js": "^3.19.3",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0",
     "lodash": "^4.17.21",
-    "nuxt": "^2.15.7",
-    "tippy.js": "^6.3.1"
+    "nuxt": "^2.15.8",
+    "tippy.js": "^6.3.7",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
-    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.18.6",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@dreamnet/eslint-config-dreamnet-nuxtjs": "^1.5.0",
-    "@nuxt/types": "^2.15.7",
+    "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/style-resources": "^1.2.0",
+    "@nuxtjs/google-fonts": "^2.0.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/svg-sprite": "^0.5.2",
     "@nuxtjs/tailwindcss": "^4.2.1",
-    "@opendreamnet/deploy-cli": "^1.3.1",
-    "@opendreamnet/nuxtjs-base": "^1.4.1",
+    "@opendreamnet/deploy-cli": "^1.4.0",
+    "@opendreamnet/nuxtjs-base": "^2.0.5",
     "@tailwindcss/typography": "^0.4.1",
     "babel-plugin-lodash": "^3.3.4",
-    "eslint": "^7.31.0",
-    "eslint-plugin-lodash": "^7.2.0",
-    "eslint-plugin-mocha": "^9.0.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.14.0",
-    "eslint-plugin-wdio": "^7.4.2",
+    "eslint": "^8.19.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-vue": "^9.1.1",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "postcss": "8.3.5",
-    "sass": "^1.35.2",
-    "standard-version": "^9.3.1"
-  }
+    "postcss": "8.4.14",
+    "sass": "^1.53.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@3.2.1"
 }

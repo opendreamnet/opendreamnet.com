@@ -1,5 +1,4 @@
 module.exports = {
-  mode: 'jit',
   presets: [
     require('@opendreamnet/nuxtjs-base/tailwind.config')
   ],
@@ -12,7 +11,5 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography')
-    // require('@tailwindcss/aspect-ratio'),
-    // require('@tailwindcss/line-clamp')
   ]
 }

@@ -10,30 +10,6 @@
 
       <div class="w-10 h-10" />
 
-      <!-- Social -->
-      <nav class="nav">
-        <a v-if="$config.githubURL"
-           :href="$config.githubURL"
-           target="_blank"
-           class="item">
-          GitHub
-        </a>
-
-        <a v-if="$config.twitterURL"
-           :href="$config.twitterURL"
-           target="_blank"
-           class="item">
-          Twitter
-        </a>
-
-        <a v-if="$config.patreonURL"
-           :href="$config.patreonURL"
-           target="_blank"
-           class="item">
-          Patreon
-        </a>
-      </nav>
-
       <!-- Links -->
       <nav class="nav">
         <!--
@@ -46,8 +22,12 @@
         </NuxtLink>
         -->
 
-        <a href="https://forum.opendreamnet.com" target="_blank" class="item">
-          Forum
+        <a href="mailto:support@opendreamnet.com" class="item">
+          Contact
+        </a>
+
+        <a href="https://forms.gle/XaYFcTe1dZzTQCbq7" target="_blank" class="item">
+          Anonymous form
         </a>
 
         <a href="https://status.opendreamnet.com" target="_blank" class="item">
@@ -57,6 +37,15 @@
     </div>
   </footer>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+
+})
+</script>
+
 
 <style lang="scss" scoped>
 .footer {
@@ -70,14 +59,14 @@
   .container {
     @apply flex flex-col-reverse justify-between gap-6;
 
-    @screen lg {
+    @screen md {
       @apply flex-row;
     }
   }
 }
 
 .nav {
-  @apply space-y-2;
+  @apply space-y-6;
 
   a {
     @apply block font-semibold text-white;
@@ -104,7 +93,7 @@
   }
 
   .cid {
-    @apply text-xs text-snow-darker cursor-default;
+    @apply text-xs text-origin-darken cursor-default;
     @apply mb-6 #{!important};
   }
 }

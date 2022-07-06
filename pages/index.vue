@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-20">
     <HomeHero />
-    <ProjectCategories />
+    <Projects />
   </div>
 </template>
 
