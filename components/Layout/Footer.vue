@@ -4,7 +4,7 @@
       <!-- Copyright -->
       <div class="footer__copyright">
         <p>
-          © {{ new Date().getFullYear() }} OpenDreamNet. All rights reserved.
+          © {{ new Date().getFullYear() }} {{ $config.name }}. All rights reserved.
         </p>
       </div>
 
