@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/opendreamnet/opendreamnet/compare/v1.0.6...v1.0.7) (2022-07-09)
+
+
+### Bug Fixes
+
+* footer copyright org name ([895336f](https://github.com/opendreamnet/opendreamnet/commit/895336f586d8764b0871034955b8b46a89adc5b7))
+
 ### [1.0.6](https://github.com/opendreamnet/opendreamnet/compare/v1.0.5...v1.0.6) (2022-07-06)
 
 
