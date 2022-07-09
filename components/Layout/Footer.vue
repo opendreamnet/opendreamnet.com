@@ -4,7 +4,7 @@
       <!-- Copyright -->
       <div class="footer__copyright">
         <p>
-          © {{ new Date().getFullYear() }} {{ $config.name }}. All rights reserved.
+          © {{ new Date().getFullYear() }} {{ $config.name }} S.A.S. de C.V. All rights reserved.
         </p>
       </div>
 
